@@ -7,7 +7,7 @@ pipeline {
         stage("build image") {
             steps {
                 script {
-                    sh "podman build jenkins -t docker-in-jenkins"
+                    sh "podman build jenkins -t docker-in-jenkins ."
                 }
             }
         }
